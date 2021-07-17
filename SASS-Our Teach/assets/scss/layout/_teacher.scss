@@ -1,0 +1,45 @@
+.teacher{
+    background-color: $white-3;
+    .col-3 {
+        padding-top: $p-13;
+        padding-bottom: $p-13;
+        width: $w-0;
+    }
+    .card {
+        border: none;
+        border-radius: $br-2;
+        overflow: hidden;
+        transition: cubic-bezier(.190,1,.220,1) $s-6;
+        .img-wrapper{
+            overflow: hidden;
+            img{
+                transition: cubic-bezier(.190,1,.220,1) $s-7;
+                &:hover{
+                    transform: scale(1.07);
+                }
+            }
+        }
+        .card-body {
+            padding-top: $p-11!important;
+            padding-bottom: $p-11!important;
+            p {
+                color: $primary;
+                font-size: $fs-6;
+                font-weight: $fw-1;
+            }
+            h3 {
+                font-size: $fs-7;
+                font-weight: $fw-2;
+            }
+            h6 {
+                font-size: $fs-8;
+                font-family: 'Roboto', sans-serif;
+                line-height: $lh-1;
+            }
+        }
+        &:hover {
+            box-shadow: $other-0 $other-1 $other-1 $other-2 rgba(0, 0, 0, 0.2);
+        }
+    }
+    
+}

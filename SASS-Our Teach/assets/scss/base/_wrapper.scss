@@ -1,0 +1,7 @@
+.wrapper {
+    margin: $m-0 $m-2;
+    @media screen and (max-width: map-get($breakpoints, "extra-large")) {
+        margin: $m-0 $m-3;
+        
+    }
+}

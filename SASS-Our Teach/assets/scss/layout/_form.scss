@@ -1,0 +1,87 @@
+.form {
+    margin: $m-1 $m-0 $m-0;
+    // margin-top: -30px;
+    padding: $p-10;
+    img {
+        &:not(.bg-img){
+            width: $w-0;
+        }
+    }
+
+    .col-6-right {
+        .form-wrapper {
+            border-radius: $br-3;
+            box-shadow: $other-0 $other-1 $other-1 $other-2 $rgba-4;
+            padding: $p-11;
+            background-color: $white-1;
+        }
+    
+        h2 {
+            font-size: $f-12;
+            font-weight: bold;
+            margin-bottom: $m-6;
+        }
+        .form-group {
+            position: relative;
+            .form-control {
+                border-radius: $br-1;
+                padding: $p-2 $p-0 $p-2 $p-12;
+                font-size: $fs-1;
+            }
+            .form-control-textarea {
+                padding: $p-1 $p-0 $p-1 $p-12;
+                border-radius: $br-3;
+        
+            }
+            i {
+                position: absolute;
+                top: $y-1;
+                left: $x-3;
+                transform: translateY($y-2);
+                color: $primary;
+            }
+            i.last {
+                top: $y-3;
+            }
+            i.email {
+                left: $x-4;
+            }
+            .btn-contact {
+                padding: $p-13 $p-10;
+            }
+
+            select {
+                height: unset;
+                padding: $p-8 $p-0 $p-8 $p-12!important;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "extra-large")) {
+        .col-6-right {
+            width: $w-0!important;
+            .form-wrapper {
+                width: $w-0!important;
+            }
+        }
+    }
+    @media screen and (max-width: map-get($breakpoints, "large")) {
+        .img-form {
+            width: $w-3!important;
+        }
+        .col-6-right {
+            h2 {
+                font-size: $f-13;
+            }
+        }
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "medium")) {
+        padding: $p-10 $p-0;
+        .form-group {
+            width: $w-0!important;
+        }
+
+    }
+}

@@ -1,0 +1,196 @@
+// color
+$primary: #b61984;
+$primary-1: #a9027e;
+
+
+$white-1: #fff;
+$white-2: #ddd;
+$white-3: #dcd0f0;
+
+$black-1: #181818;
+
+
+$rgba-1: rgba(0, 0, 0, 0.1);
+$rgba-2: rgba(255, 255, 255 , 0.2);
+$rgba-3: rgba(255, 255, 255 , 1);
+$rgba-4: rgba(0, 0, 0, 0.2);
+$rgba-5: rgba(204, 204, 204, 0.5);
+
+// background
+
+
+// font-size
+$fs-0: 62.5%;
+$fs-1: 1.3rem;
+$fs-2: 1.35rem;
+$fs-3: 1.5rem;
+$fs-4: 4.7rem;
+$fs-5: 5rem;
+$fs-6: 1.125rem;
+$fs-7: 2.325rem;
+$fs-8: 1.4rem;
+$fs-9: 1.6rem;
+$f-10: 4.2rem;
+$f-11: 1.26rem;
+$f-12: 3.5rem;
+$f-13: 3rem;
+$f-14: 1.2rem;
+
+// font-weight
+$fw-1: 600;
+$fw-2: 700;
+$fw-3: 500;
+
+// width
+$w-0: 100%;
+$w-1: 8rem;
+$w-2: 80%;
+$w-3: 70%;
+$w-4: 2rem;
+$w-5: 65rem;
+$w-6: 25rem;
+$w-7: .5rem;
+$w-8: 1rem;
+$w-9: 67rem;
+$w-10: 3rem;
+$w-11: 4.5rem;
+
+// height
+$h-0: 0;
+$h-1: 95%;
+$h-2: 4.8rem;
+$h-3: 100%;
+$h-4: .5rem;
+$h-5: 1rem;
+$h-6: 5rem;
+$h-7: 3.5rem;
+$h-8: 3rem;
+$h-9: .3rem;
+
+// border-radius
+$br-1: 5rem;
+$br-2: 1rem;
+$br-3: 2rem;
+$br-4: 50%;
+$br-5: .5rem;
+
+
+// border
+$b-1: .1rem;
+$b-2: .2rem;
+
+// padding
+$p-0: 0rem;
+$p-1: 1rem;
+$p-2: 2rem;
+$p-3: 1.4rem;
+$p-4: 8rem;
+$p-5: 7rem;
+$p-6: 15rem;
+$p-7: 22rem;
+$p-8: 1.2rem;
+$p-9: .7rem;
+$p-10: 5rem;
+$p-11: 3rem;
+$p-12: 4rem;
+$p-13: 1.5rem;
+$p-14: 1.3rem;
+
+// margin
+$m-0: 0;
+$m-1: 1rem;
+$m-2: 10rem;
+$m-3: 2rem;
+$m-4: 3rem;
+$m-5: 15rem;
+$m-6: 5rem;
+
+
+// line-height
+$lh-1: 2.5rem;
+
+//y
+$y-1: 50%;
+$y-2: -50%;
+$y-3: 2.25rem;
+$y-4: -19.5rem;
+$y-5: -31.5rem;
+$y-6: -23.5rem;
+$y-7: -15.5rem;
+$y-8: -27.5rem;
+$y-9: 0rem;
+$y-10: -10rem;
+$y-11: -22.5rem;
+$y-12: -36rem;
+$y-13: -27rem;
+$y-14: -17.8rem;
+$y-15: -31.8rem;
+$y-16: 18%;
+$y-17: 48%;
+$y-18: 78%;
+$y-19: 100%;
+
+
+//x
+$x-1: 50%;
+$x-2: -50%;
+$x-3: 1.5rem;
+$x-4: 1.8rem;
+$x-5: -16rem;
+$x-6: 3rem;
+$x-7: -15rem;
+$x-8: -24rem;
+$x-9: 45%;
+$x-10: 0;
+$x-11: 1rem;
+$x-12: -27rem;
+$x-13: -30rem;
+
+
+
+//second
+$s-1: .1s;
+$s-2: .3s;
+$s-3: .5s;
+$s-4: .2s;
+$s-5: .4s;
+$s-6: 1s;
+$s-7: 3s;
+
+
+
+// opacity
+$oppa-1: 0.8;
+$oppa-2: 0;
+$oppa-3: 1;
+
+
+
+
+// z-index
+$z-1: 3;
+$z-2: 1;
+$z-3: 10;
+
+
+//other
+$other-0: 0rem;
+$other-1: 3rem;
+$other-2: -1rem;
+$other-3: 1rem;
+
+
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+    "fix-bug": 358px,
+    "fix-bug-2": 390px
+);

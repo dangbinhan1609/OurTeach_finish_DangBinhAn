@@ -1,0 +1,30 @@
+.carousel{
+    padding-bottom: $p-4;
+    img{
+        &:not( .img-bg){
+            height: $h-1;
+        }
+    }
+
+    h6 {
+        color: $primary;
+        font-size: $fs-3;
+        margin-bottom: $m-1;
+    }
+
+    h1 {
+        font-size: $fs-5;
+        font-weight: $fw-2;
+    }
+    @media screen and (max-width: map-get($breakpoints, "large")) {
+        padding-top: $p-5;
+        h1 {
+            font-size: $f-10;
+        }
+        img {
+            &:not(.img-bg){
+                width: $w-3!important;
+            }
+        }
+    }
+}

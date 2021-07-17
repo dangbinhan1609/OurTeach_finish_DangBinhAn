@@ -1,0 +1,39 @@
+@mixin button($bgBtn, $bdBtn, $bgBefore, $colorSpan){
+    padding: $p-3;
+    border-radius: $br-1;
+    width: $w-0;
+    outline: none!important;
+    background-color: $bgBtn;
+    border: $b-1 solid $bdBtn;
+    font-weight: $fw-1;
+    position: relative;
+    height: $h-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        position: absolute;
+        transition: all $s-2;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: $w-2;
+        height: $h-0;
+        background-color: $bgBefore;
+        top: $y-1;
+        left: $x-1;
+        border-radius: $br-1;
+        transform: translate($x-2, $y-2);
+        transition: all $s-1;
+    }
+    &:hover {
+        span {
+            color: $colorSpan;
+        }
+        &::before{
+            width: $w-0;
+            height: $h-3;
+        }
+    }
+}

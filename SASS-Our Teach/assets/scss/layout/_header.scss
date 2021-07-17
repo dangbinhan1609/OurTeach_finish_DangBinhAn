@@ -1,0 +1,101 @@
+header {
+    position: relative;
+    transition: all $s-3;
+    img {
+        width: $w-1;
+    }
+    a {
+        color: $black-1 ;
+        font-size: $fs-1;
+        font-weight: $fw-1;
+    }
+
+    .nav-item{
+        position: relative;
+        &.nav-bar{
+            &::before {
+                content: "";
+                width: $w-8;
+                height: $h-5;
+                border-radius: $br-4;
+                background-color: $primary-1;
+                position: absolute;
+                bottom: $y-9;
+                left: $y-1;
+                transform: translateX($x-3) scale(0);
+                transition: all $s-3;
+                z-index: $z-1;
+            }
+
+            &:hover {
+                color: $primary-1;
+                &::before {
+                    transform: scale(1.3);
+                }
+            }
+        }
+        .social{
+            .icon {
+                transition: all $s-3;
+                font-size: $fs-3;
+                &:hover {
+                    color: $primary-1;
+                }
+            }
+        }
+        &.active {
+            &:hover{
+                &::before{
+                    z-index: $z-1;
+                }
+            }
+            &::before {
+                transform:scale(0.9);
+                z-index: $z-2;
+            }
+        }
+    }
+
+    
+
+    @media screen and (max-width: map-get($breakpoints , "extra-large")) {
+        background-color: $white-1;
+        .navbar-brand {
+            &.active{
+                img{
+                    display: inline-block;
+                }
+            }
+        }
+        .menu{
+            position: relative;
+            width: $w-10;
+            height: $h-8;
+            margin-right: $m-1;
+            .line {
+                position: absolute;
+                width: $w-0;
+                height: $h-9;
+                background-color: $black-1;
+                z-index: $z-3;
+                border-radius: $br-5;
+                &.line-1{
+                    top: $y-16;
+                }
+                &.line-2{
+                    top: $y-17;
+                }
+                &.line-3{
+                    top: $y-18;
+                }
+            }
+
+        }
+        img {
+            width: $w-11;
+        }
+        #collapsibleNavbar{
+            display: none!important;
+        }
+    }
+}
